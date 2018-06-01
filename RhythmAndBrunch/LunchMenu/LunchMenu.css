@@ -11,8 +11,6 @@
     grid: 0px;
     grid-template-columns: 16% 18% 16% 50%;
     grid-template-areas:
-
-        
         "logo logo grill grill"
         "LM LM LM number1"
         "RB RB RB number2"
@@ -28,35 +26,32 @@
         "D D B blank"
         ;
 }
+
+/*sections */
 .food {
     margin: 5px;
     margin-left: 30px;
+    padding-left: 10px;
 }
 
-.food:hover{
+.food:hover {
     transform: scale(1.1); 
-    
-}
-div{
-    
-    
 }
 
-
-.logo{
+.logo {
     grid-area: logo;
-    
 }
 
-.grill{
+.grill {
     grid-area: grill;
-    
-}
-.LM{
-    grid-area: LM;
 }
 
-.RB{
+.LM {
+    grid-area: LM;
+    text-align: center;
+}
+
+.RB {
     grid-area: RB;
     background-color:black;
     border-width: 2px;
@@ -71,25 +66,27 @@ div{
     border-color:white; 
 }
 
-div:hover{
-     box-shadow: 10px 8px 4px 4px rgba(10,10,200,0.8);
+div:hover {
+    box-shadow: 10px 8px 4px 4px rgba(10,10,200,0.8);
     transform: scale(1.05); 
     transition-duration: 1s;
-    
     transform: scale(1.005);
     transition-duration: .5s;
 }
-.menu:hover, .grill:hover, .logo:hover, .LM:hover, .page:hover{
+.menu:hover, .grill:hover, .logo:hover, .LM:hover, .page:hover,.blank:hover {
     box-shadow:0px 0px 0px 0px rgba(100,10,0,0.8);
     transform: scale(1);    
     transition-duration: .5s;
 }
 
-.page:hover, .menu:hover{
-     transform: scale(1); 
-    
+.page:hover, .menu:hover {
+    transform: scale(1); 
 }
-.NewKids{
+
+.logo:hover {
+    transform: scale(1);
+}
+.NewKids {
     grid-area: NewKids;
     background-color:black;
     border-width: 2px;
@@ -103,12 +100,11 @@ div:hover{
     border-bottom-width: 3px;
     border-bottom-style:dotted;
     border-color:white;
-   
 }
 
-.Common{
+.Common {
     grid-area: Common;
-     background-color:black;
+    background-color:black;
     border-width: 2px;
     border-style:solid;
     border-color:white;
@@ -120,11 +116,11 @@ div:hover{
     border-bottom-width: 3px;
     border-bottom-style:dotted;
     border-color:white;
-    
 }
+
 .Adds{
     grid-area: Adds;
-     background-color:black;
+    background-color:black;
     border-width: 2px;
     border-style:solid;
     border-color:white;
@@ -136,12 +132,12 @@ div:hover{
     border-right-width: 3px;
     border-right-style:dotted;
     border-color:white;
-    
 }
-.Bread{
+
+.Bread {
     grid-area: Bread;
-     background-color:black;
-        border-width: 2px;
+    background-color:black;
+    border-width: 2px;
     border-style:solid;
     border-color:white;
     border-radius: 0px;
@@ -153,10 +149,11 @@ div:hover{
     border-right-style:dotted;
     border-color:white;
 }
-.Cheese{
+
+.Cheese {
     grid-area: Cheese;
     background-color:black;
-        border-width: 2px;
+    border-width: 2px;
     border-style:solid;
     border-color:white;
     border-radius: 0px;
@@ -167,15 +164,15 @@ div:hover{
     border-left-style:dotted;
     border-color:white;
     border-left: 3px;
-    
 }
-.S{
+
+.S {
     grid-area: S;
-   background-color:whitesmoke;
-   
-   
+    background-color:whitesmoke;
+    padding-left: 10px;
 }
-.B{
+
+.B {
     grid-area: B;
     background-color:whitesmoke;
     border-left: 3px;
@@ -184,25 +181,27 @@ div:hover{
     border-right: 3px;
     border-right-width: 3px;
     border-right-style: solid;
-   
+    padding-left: 10px;
 }
-.D{
+
+.D {
     grid-area: D;
     background-color:whitesmoke;
     border-top: 3px;
     border-top-width: 3px;
     border-top-style: solid;
-    
+    padding-left: 10px;
 }
-.picture{
-   	margin-left: auto;
-	margin-right: auto;
-	display: block;
+
+.picture {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     width: 60%;
 }
 
-        /* FOOD*/
-.number1{
+/* FOOD*/
+.number1 {
     grid-area: number1;
     background-color:whitesmoke;
     border-width: 2px;
@@ -211,7 +210,8 @@ div:hover{
     border-radius: 5px;
     border-spacing: 15px;
 }
-.number2{
+
+.number2 {
     grid-area: number2;
     background-color:whitesmoke;
     border-width: 2px;
@@ -220,7 +220,8 @@ div:hover{
     border-radius: 5px;
     border-spacing: 15px;
 }
-.number3{
+
+.number3 {
     grid-area: number3;
     background-color:whitesmoke;
     border-width: 2px;
@@ -229,7 +230,8 @@ div:hover{
     border-radius: 5px;
     border-spacing: 15px;
 }
-.number4{
+
+.number4 {
     grid-area: number4;
     background-color:whitesmoke;
     border-width: 2px;
@@ -238,7 +240,8 @@ div:hover{
     border-radius: 5px;
     border-spacing: 15px;
 }
-.number5{
+
+.number5 {
     grid-area: number5;
     background-color:whitesmoke;
     border-width: 2px;
@@ -247,7 +250,8 @@ div:hover{
     border-radius: 5px;
     border-spacing: 15px;
 }
-.number6{
+
+.number6 {
     grid-area: number6;
     background-color:whitesmoke;
     border-width: 2px;
@@ -256,7 +260,8 @@ div:hover{
     border-radius: 5px;
     border-spacing: 15px;
 }
-.number7{
+
+.number7 {
     grid-area: number7;
     background-color:whitesmoke;
     border-width: 2px;
@@ -265,7 +270,7 @@ div:hover{
     border-radius: 5px;
     border-spacing: 15px;
 }
-.number8{
+.number8 {
     grid-area: number8;
     background-color:whitesmoke;
     border-width: 2px;
@@ -274,7 +279,8 @@ div:hover{
     border-radius: 5px;
     border-spacing: 15px;
 }
-.number9{
+
+.number9 {
     grid-area: number9;
     background-color:whitesmoke;
     border-width: 2px;
@@ -283,7 +289,8 @@ div:hover{
     border-radius: 5px;
     border-spacing: 15px;
 }
-.number10{
+
+.number10 {
     grid-area: number10;
     background-color:whitesmoke;
     border-width: 2px;
@@ -293,37 +300,35 @@ div:hover{
     border-spacing: 15px;
 }
 
-.blank{
+.blank {
     grid-area: blank;
     background-color:black;
-    
 }
 
-
-        /* FONTS */
-.BS{
+/* FONTS */
+.BS {
     font-size: 20px;
     color: white;
 }
-.BoldYellow{
+
+.BoldYellow {
     font-size: 20px;
     color: yellow;
 
 }
 
 
-.WNormal{
+.WNormal {
     font-size: 20px;
     color: white;
-
 }
-.GreenNormal{
+
+.GreenNormal {
     font-size: 20px;
     color: chartreuse
 }
 
-
-.NormalBlue{
+.NormalBlue {
     font-size: 20px;
     color: skyblue;
 }
@@ -392,6 +397,7 @@ div:hover{
     color: black;
     font-size: 30px;
 }
+
 .BNormal{
     color: black;
     font-size: 20px;

@@ -1,5 +1,4 @@
 body {
-    
     background-color:black;
     background-repeat: no-repeat; 
     background-attachment:fixed; 
@@ -9,12 +8,11 @@ body {
 }
 
 body{
-     text-align: center;
+    text-align: center;
 }
 h1 {
     color: red;
     text-align:50,50;
-    
 }
 
 p {

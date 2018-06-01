@@ -13,7 +13,6 @@
     grid-gap: 0px;
     grid-template-columns: 25% 25% 50%;
     grid-template-areas:
-
         "logo grill grill"
         "BB BB Number1"
         " Punisher Punisher Number2"
@@ -33,73 +32,85 @@
 
 }
 
+/*sections */
 .Fancy {
     color: red;
-font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     text-align: center;
 }
 
-
-.ul{
+.ul {
     grid-area:ul ;
 }
-.BB{
-  font-family: 'Russo One', sans-serif;
+.BB { 
+    font-family: 'Russo One', sans-serif;
     color:red;
+    text-align: center;
 }
-.logo{
+
+.logo {
     grid-area:logo ;
 }
-.logo:hover{
+
+.logo:hover {
     transform: scale(1.1);
 }
 
-div:hover{
+div:hover {
     box-shadow: 10px 8px 4px 4px rgba(10,10,200,0.8);
     transform: scale(1.05); 
     transition-duration: 1s;
 }
-.page:hover, .menu:hover{
-     transform: scale(1);
+
+/*dont zoom in*/
+.page:hover, .menu:hover {
+    transform: scale(1);
 }
-.menu:hover, .grill:hover, .logo:hover, .BB:hover, .page:hover{
+
+/*dont zoom in */
+.menu:hover, .grill:hover, .logo:hover, .BB:hover, .page:hover, .blank:hover {
     box-shadow:0px 0px 0px 0px rgba(100,10,0,0.8);
     transform: scale(1);    
     transition-duration: .5s;
 }
-.grill{
+
+.grill {
     grid-area:grill ;  
 }
-.blank{
+
+.blank {
     grid-area:blank ;
     background-color:black;
 }
 
-
 .food {
     margin: 5px;
     margin-left: 30px;
+    padding-left: 10px;
 }
 
-.food:hover{
+.food:hover {
     transform: scale(1.1); 
 }
 
-
-.S{
+.S {
     grid-area:S ;
     background-color: whitesmoke;
     border-right: 3px;
     border-right-width: 3px;
     border-right-style: solid;
+    padding-left: 10px;
 }
-.Be{
+
+.Be {
     grid-area:Be ;
     background-color: whitesmoke;
     border-right: 3px;
     border-right-width: 3px;
     border-right-style: solid;
+    padding-left: 10px;
 }
+
 .C{
     grid-area:CB ;
     background-color: black;
@@ -115,7 +126,8 @@ div:hover{
     border-right-style:dotted;
     border-color:white;
 }
-.B{
+
+.B {
     grid-area:B ;
     background-color: black;
     border-width: 2px;
@@ -123,11 +135,12 @@ div:hover{
     border-color:white;
     border-radius: 0px;
     border-spacing: 15px;
-     text-align: center;
+    text-align: center;
     border-top: 3px;
     border-left: 3px;
 }
-.BreakfastMeat{
+
+.BreakfastMeat {
     grid-area:BreakfastMeat;
     background-color: black;
     font-size: 30px;
@@ -148,7 +161,8 @@ div:hover{
     border-color:white;
 
 }
-.OmeletFillers{
+
+.OmeletFillers {
     grid-area:OmeletFillers;
     background-color: black;
     font-size: 30px;
@@ -165,6 +179,7 @@ div:hover{
     border-color:white;
     border-left: 3px;
 }
+
 .NewKids{
     grid-area:NewKids ;
     background-color: black;
@@ -181,14 +196,12 @@ div:hover{
     border-color:white;
 
 }
-.BB{
+.BB {
     grid-area: BB;
     font-size: 40px;
-
 }
 
-
-.Punisher{
+.Punisher {
     grid-area:Punisher ;
     font-size: 40px;
     background-color: black;
@@ -201,20 +214,23 @@ div:hover{
     border-bottom-width: 3px;
     border-bottom-style:dotted;
     border-color:white;
+    text-align: center;
 }
-.S{
+
+.S {
     grid-area:S ;
     font-size: 20px;
     color: white;
     border-left:  3px;
     border-color: black;
-
 }
+
 .Be{
     grid-area:Be ;
-
 }
-.Number1{
+
+/*food*/
+.Number1 {
     grid-area:Number1 ;
     background-color:whitesmoke;
     border-width: 2px;
@@ -222,9 +238,9 @@ div:hover{
     border-color:red;
     border-radius: 5px;
     border-spacing: 15px;
-
 }
-.Number2{
+
+.Number2 {
     grid-area: Number2;
     background-color:whitesmoke;
     border-width: 2px;
@@ -232,9 +248,9 @@ div:hover{
     border-color:black;
     border-radius: 5px;
     border-spacing: 15px;
-
 }
-.Number3{
+
+.Number3 {
     grid-area:Number3 ;
     background-color:whitesmoke;
     border-width: 2px;
@@ -242,9 +258,9 @@ div:hover{
     border-color:black;
     border-radius: 5px;
     border-spacing: 15px;
-
 }
-.Number4{
+
+.Number4 {
     grid-area: Number4;
     background-color:whitesmoke;
     border-width: 2px;
@@ -253,7 +269,8 @@ div:hover{
     border-radius: 5px;
     border-spacing: 15px;
 }
-.Number5{
+
+.Number5 {
     grid-area:Number5 ;
     background-color:whitesmoke;
     border-width: 2px;
@@ -261,9 +278,9 @@ div:hover{
     border-color:black;
     border-radius: 5px;
     border-spacing: 15px;
-
 }
-.Number6{
+
+.Number6 {
     grid-area: Number6;
     background-color:whitesmoke;
     border-width: 2px;
@@ -272,7 +289,8 @@ div:hover{
     border-radius: 5px;
     border-spacing: 15px;
 }
-.Number7{
+
+.Number7 {
     grid-area:Number7 ;
     background-color:whitesmoke;
     border-width: 2px;
@@ -280,9 +298,9 @@ div:hover{
     border-color:black;
     border-radius: 5px;
     border-spacing: 15px;
-
 }
-.Number8{
+
+.Number8 {
     grid-area:Number8 ;
     background-color:whitesmoke;
     border-width: 2px;
@@ -290,9 +308,9 @@ div:hover{
     border-color:black;
     border-radius: 5px;
     border-spacing: 15px;
-
 }
-.Number9{
+
+.Number9 {
     grid-area:Number9 ;
     background-color:whitesmoke;
     border-width: 2px;
@@ -301,7 +319,8 @@ div:hover{
     border-radius: 5px;
     border-spacing: 15px;
 }
-.Number10{
+
+.Number10 {
     grid-area: Number10;
     background-color:whitesmoke;
     border-width: 2px;
@@ -309,89 +328,97 @@ div:hover{
     border-color:black;
     border-radius: 5px;
     border-spacing: 15px;
-
 }
+
 /*fonts*/
 
-.BoldYellow{
-
+.BoldYellow {
     font-size: 20px;
     color: yellow;
-
 }
-.YellowNormal{
 
+.YellowNormal {
     font-size: 20px;
     color: yellow;
-
 }
-.WNormal{
+
+.WNormal {
     font-size: 20px;
     color: white;
-
 }
-.GreenNormal{
+
+.GreenNormal {
     font-size: 20px;
     color: chartreuse
 }
 
-.BNormalBold{
+.BNormalBold {
     font-size: 30px;
     color: black;
-
 }
-.BNormal{
+
+.BNormal {
     font-size: 20px;
     color: black;
 }
-.NormalRed{
+
+.NormalRed {
     font-size: 20px;
     color: red;
 }
 
-.BigRed{
+.BigRed {
     color: red;
     font-size: 30px;
 }
-.SmallNormal{
+
+.SmallNormal {
     font-size: 15px;
 }
-.SmallNormalRed{
+
+.SmallNormalRed {
     color:red;
     font-size: 15px;
 }
+
 .FoodNormal{
     color:mediumpurple;
     font-size: 30px;
 }
-.twoeggs{
+.twoeggs {
     font-size: 20px;
     color:hotpink;
-
 }
-.twoeggs2{
+
+.twoeggs2 {
     font-size: 20px;
     color:dodgerblue;  
 }
-.SFoodNormal{
+
+.SFoodNormal {
     color:mediumpurple;
-    font-size: 20px;}
-.BS{
+    font-size: 20px;
+}
+
+.BS {
     font-size: 20px;
     color:white;
     text-align: center;
 }
-.BigPunisher{
+
+.BigPunisher {
     font-size: 40px;
     color: red;
 }
-.picture{
-   	margin-left: auto;
-	margin-right: auto;
-	display: block;
+
+.picture {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     width: 60%;
 }
-.WNormal2{
+
+.WNormal2 {
     font-size: 30px;
     color: white;
 }

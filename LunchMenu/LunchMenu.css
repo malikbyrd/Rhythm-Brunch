@@ -1,0 +1,404 @@
+
+
+.page{
+
+    background-color:gray;
+    background-repeat: no-repeat; 
+    background-attachment:fixed; 
+    background-size:cover;
+    background-image:url("background2.png");
+    display: grid;
+    grid: 0px;
+    grid-template-columns: 16% 18% 16% 50%;
+    grid-template-areas:
+        "logo logo grill grill"
+        "LM LM LM number1"
+        "RB RB RB number2"
+        "RB RB RB number3"
+        "NewKids NewKids NewKids number4"
+        "NewKids NewKids NewKids number5"
+        "Common Common Common number6"
+        "Common Common Common number7"
+        "Common Common Common number8"
+        "Adds Bread Cheese number9"
+        "Adds Bread Cheese number10"
+        "S S B blank"
+        "D D B blank"
+        ;
+}
+
+/*sections */
+.food {
+    margin: 5px;
+    margin-left: 30px;
+    padding-left: 10px;
+}
+
+.food:hover {
+    transform: scale(1.1); 
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.grill {
+    grid-area: grill;
+}
+
+.LM {
+    grid-area: LM;
+    text-align: center;
+}
+
+.RB {
+    grid-area: RB;
+    background-color:black;
+    border-width: 2px;
+    border-style:solid;
+    border-color:white;
+    border-radius: 0px;
+    border-spacing: 15px;
+    text-align: center;
+    border-bottom: 3px;
+    border-bottom-width: 3px;
+    border-bottom-style:dotted;
+    border-color:white; 
+}
+
+div:hover {
+    box-shadow: 10px 8px 4px 4px rgba(10,10,200,0.8);
+    transform: scale(1.05); 
+    transition-duration: 1s;
+    transform: scale(1.005);
+    transition-duration: .5s;
+}
+.menu:hover, .grill:hover, .logo:hover, .LM:hover, .page:hover,.blank:hover {
+    box-shadow:0px 0px 0px 0px rgba(100,10,0,0.8);
+    transform: scale(1);    
+    transition-duration: .5s;
+}
+
+.page:hover, .menu:hover {
+    transform: scale(1); 
+}
+
+.logo:hover {
+    transform: scale(1);
+}
+.NewKids {
+    grid-area: NewKids;
+    background-color:black;
+    border-width: 2px;
+    border-style:solid;
+    border-color:white;
+    border-radius: 0px;
+    border-spacing: 15px;
+    text-align: center;
+    border-top: 3px;
+    border-bottom: 3px;
+    border-bottom-width: 3px;
+    border-bottom-style:dotted;
+    border-color:white;
+}
+
+.Common {
+    grid-area: Common;
+    background-color:black;
+    border-width: 2px;
+    border-style:solid;
+    border-color:white;
+    border-radius: 0px;
+    border-spacing: 15px;
+    text-align: center;
+    border-top: 3px;
+    border-bottom: 3px;
+    border-bottom-width: 3px;
+    border-bottom-style:dotted;
+    border-color:white;
+}
+
+.Adds{
+    grid-area: Adds;
+    background-color:black;
+    border-width: 2px;
+    border-style:solid;
+    border-color:white;
+    border-radius: 0px;
+    border-spacing: 15px;
+    text-align: center;
+    border-top: 3px;
+    border-right: 3px;
+    border-right-width: 3px;
+    border-right-style:dotted;
+    border-color:white;
+}
+
+.Bread {
+    grid-area: Bread;
+    background-color:black;
+    border-width: 2px;
+    border-style:solid;
+    border-color:white;
+    border-radius: 0px;
+    border-spacing: 15px;
+    text-align: center;
+    border-top: 3px;
+    border-left: 3px;
+    border-right-width: 3px;
+    border-right-style:dotted;
+    border-color:white;
+}
+
+.Cheese {
+    grid-area: Cheese;
+    background-color:black;
+    border-width: 2px;
+    border-style:solid;
+    border-color:white;
+    border-radius: 0px;
+    border-spacing: 15px;
+    text-align: center;
+    border-top: 3px;
+    border-left-width: 3px;
+    border-left-style:dotted;
+    border-color:white;
+    border-left: 3px;
+}
+
+.S {
+    grid-area: S;
+    background-color:whitesmoke;
+    padding-left: 10px;
+}
+
+.B {
+    grid-area: B;
+    background-color:whitesmoke;
+    border-left: 3px;
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-right: 3px;
+    border-right-width: 3px;
+    border-right-style: solid;
+    padding-left: 10px;
+}
+
+.D {
+    grid-area: D;
+    background-color:whitesmoke;
+    border-top: 3px;
+    border-top-width: 3px;
+    border-top-style: solid;
+    padding-left: 10px;
+}
+
+.picture {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 60%;
+}
+
+/* FOOD*/
+.number1 {
+    grid-area: number1;
+    background-color:whitesmoke;
+    border-width: 2px;
+    border-style:solid;
+    border-color:black;
+    border-radius: 5px;
+    border-spacing: 15px;
+}
+
+.number2 {
+    grid-area: number2;
+    background-color:whitesmoke;
+    border-width: 2px;
+    border-style:solid;
+    border-color:black;
+    border-radius: 5px;
+    border-spacing: 15px;
+}
+
+.number3 {
+    grid-area: number3;
+    background-color:whitesmoke;
+    border-width: 2px;
+    border-style:solid;
+    border-color:black;
+    border-radius: 5px;
+    border-spacing: 15px;
+}
+
+.number4 {
+    grid-area: number4;
+    background-color:whitesmoke;
+    border-width: 2px;
+    border-style:solid;
+    border-color:black;
+    border-radius: 5px;
+    border-spacing: 15px;
+}
+
+.number5 {
+    grid-area: number5;
+    background-color:whitesmoke;
+    border-width: 2px;
+    border-style:solid;
+    border-color:black;
+    border-radius: 5px;
+    border-spacing: 15px;
+}
+
+.number6 {
+    grid-area: number6;
+    background-color:whitesmoke;
+    border-width: 2px;
+    border-style:solid;
+    border-color:black;
+    border-radius: 5px;
+    border-spacing: 15px;
+}
+
+.number7 {
+    grid-area: number7;
+    background-color:whitesmoke;
+    border-width: 2px;
+    border-style:solid;
+    border-color:black;
+    border-radius: 5px;
+    border-spacing: 15px;
+}
+.number8 {
+    grid-area: number8;
+    background-color:whitesmoke;
+    border-width: 2px;
+    border-style:solid;
+    border-color:black;
+    border-radius: 5px;
+    border-spacing: 15px;
+}
+
+.number9 {
+    grid-area: number9;
+    background-color:whitesmoke;
+    border-width: 2px;
+    border-style:solid;
+    border-color:black;
+    border-radius: 5px;
+    border-spacing: 15px;
+}
+
+.number10 {
+    grid-area: number10;
+    background-color:whitesmoke;
+    border-width: 2px;
+    border-style:solid;
+    border-color:black;
+    border-radius: 5px;
+    border-spacing: 15px;
+}
+
+.blank {
+    grid-area: blank;
+    background-color:black;
+}
+
+/* FONTS */
+.BS {
+    font-size: 20px;
+    color: white;
+}
+
+.BoldYellow {
+    font-size: 20px;
+    color: yellow;
+
+}
+
+
+.WNormal {
+    font-size: 20px;
+    color: white;
+}
+
+.GreenNormal {
+    font-size: 20px;
+    color: chartreuse
+}
+
+.NormalBlue {
+    font-size: 20px;
+    color: skyblue;
+}
+
+.BigRed{
+    color: red;
+    font-size: 25px;
+}
+
+.SmallNormalRed{
+    color:red;
+    font-size: 18px;
+}
+.FoodNormal{
+    color:mediumpurple;
+    font-size: 30px;
+}
+.RC{
+    font-size: 40px;
+    color:red;
+
+}
+
+.SRedNormal{
+    color:red;
+    font-size: 15px;
+}
+}
+
+.VBlue{
+    color: blue;
+    font-size: 25px;
+}
+
+.LM{
+    grid-area: LM;
+    color: white;
+    font-size: 50px;
+}
+
+.SBurger{
+    color: white;
+    font-size: 20px;
+}
+.Bananas{
+    color: skyblue;
+    font-size: 20px;
+}
+
+.YellowNormal{
+    color: yellow;
+    font-size: 30px;
+}
+
+.BNormalBold{
+    color: deepskyblue;
+    font-size: 35px;
+}
+
+.NormalRed{
+    color: red;
+    font-size: 18px;
+}
+
+.BBig{
+    color: black;
+    font-size: 30px;
+}
+
+.BNormal{
+    color: black;
+    font-size: 20px;
+}

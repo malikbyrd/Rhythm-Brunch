@@ -1,0 +1,116 @@
+
+h1 {
+    size: 150%;
+}
+
+p{ border-style: solid;
+    border-color: black;
+    text-align: center;    
+    margin: 0;
+    padding: 7px;
+    height: 21%;
+    border-left-color: red;
+    border-bottom-width: 1;
+    border-top-width: 1;
+    background-color: burlywood;
+    font-size: 20px;
+}
+
+.left {
+    border-color: black;
+    border-right-color: red;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.right {
+    border-color: black;
+    border-left-color: red;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    border-style:none;
+    border-width: 2px;
+    width: 100px;
+    transition-duration: 2s;
+}
+
+body {
+    max-width: 1000px;
+    margin: auto;
+    background-image: url("");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 25% 22% 23% 25%;
+    grid-template-areas:
+        "top top top top"
+        "left center_left center_right right"
+        "bottom bottom bottom bottom"
+        ;
+}
+
+/*top of jukebox*/
+#top {
+    grid-area: top;
+    height: 525px;
+    background-image: url("IMG/New Juke Box/top.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:bottom;
+}
+
+/*left side of jukebox*/
+#left {
+    grid-area: left;
+    height: 190px;
+    background-image: url("IMG/New Juke Box/left.png");
+    background-size:contain;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: top;
+
+
+}
+
+/*right side of jukebox*/
+#right {
+    grid-area: right;
+    height: 190px;
+    background-image: url("IMG/New Juke Box/right.png");
+    background-size:contain;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position:top;
+
+}
+
+/*bottom of jukebox*/
+#bottom {
+    grid-area: bottom;
+    height: 990px;
+    margin-left: 15px;
+    margin-right: 30px;
+    background-image: url("IMG/New Juke Box/bottom.png");
+    background-size:contain;
+    background-position: top;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+#center_left {
+    grid-area: center_left;
+
+}
+
+#center_right {
+    grid-area: center_right;
+
+}

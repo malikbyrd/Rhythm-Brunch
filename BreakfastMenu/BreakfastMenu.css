@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+.page {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color:orange;
+    background-repeat: no-repeat; 
+    background-attachment:fixed; 
+    background-size:contain;
+    background-image:url("background.png");
+    background-position:;
+    background-size: cover;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-areas:
+        "logo grill grill"
+        "BB BB Number1"
+        " Punisher Punisher Number2"
+        "Punisher Punisher Number3"
+        "NewKids NewKids Number4"
+        "NewKids NewKids Number5"
+        "BreakfastMeat OmeletFillers Number6"
+        "BreakfastMeat OmeletFillers Number7"
+        "BreakfastMeat OmeletFillers Number8"
+        "CB B Number9"
+        "CB B Number10"
+        "S Be blank"
+        "S Be blank"
+        "S Be blank"
+        "S Be blank"
+        ;
+
+}
+
+/*sections */
+.Fancy {
+    color: red;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+}
+
+.ul {
+    grid-area:ul ;
+}
+.BB { 
+    font-family: 'Russo One', sans-serif;
+    color:red;
+    text-align: center;
+}
+
+.logo {
+    grid-area:logo ;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+div:hover {
+    box-shadow: 10px 8px 4px 4px rgba(10,10,200,0.8);
+    transform: scale(1.05); 
+    transition-duration: 1s;
+}
+
+/*dont zoom in*/
+.page:hover, .menu:hover {
+    transform: scale(1);
+}
+
+/*dont zoom in */
+.menu:hover, .grill:hover, .logo:hover, .BB:hover, .page:hover, .blank:hover {
+    box-shadow:0px 0px 0px 0px rgba(100,10,0,0.8);
+    transform: scale(1);    
+    transition-duration: .5s;
+}
+
+.grill {
+    grid-area:grill ;  
+}
+
+.blank {
+    grid-area:blank ;
+    background-color:black;
+}
+
+.food {
+    margin: 5px;
+    margin-left: 30px;
+    padding-left: 10px;
+}
+
+.food:hover {
+    transform: scale(1.1); 
+}
+
+.S {
+    grid-area:S ;
+    background-color: whitesmoke;
+    border-right: 3px;
+    border-right-width: 3px;
+    border-right-style: solid;
+    padding-left: 10px;
+}
+
+.Be {
+    grid-area:Be ;
+    background-color: whitesmoke;
+    border-right: 3px;
+    border-right-width: 3px;
+    border-right-style: solid;
+    padding-left: 10px;
+}
+
+.C{
+    grid-area:CB ;
+    background-color: black;
+    border-width: 2px;
+    border-style:solid;
+    border-color:white;
+    border-radius: 0px;
+    border-spacing: 15px;
+    text-align: center;
+    border-top: 3px;
+    border-right: 3px;
+    border-right-width: 3px;
+    border-right-style:dotted;
+    border-color:white;
+}
+
+.B {
+    grid-area:B ;
+    background-color: black;
+    border-width: 2px;
+    border-style:solid;
+    border-color:white;
+    border-radius: 0px;
+    border-spacing: 15px;
+    text-align: center;
+    border-top: 3px;
+    border-left: 3px;
+}
+
+.BreakfastMeat {
+    grid-area:BreakfastMeat;
+    background-color: black;
+    font-size: 30px;
+    border-width: 2px;
+    border-style:solid;
+    border-color:white;
+    border-radius: 0px;
+    border-spacing: 15px;
+    text-align: center;
+    border-top: 3px;
+    border-bottom: 3px;
+    border-bottom-width: 3px;
+    border-bottom-style:dotted;
+    border-color:white;
+    border-right: 3px;
+    border-right-width: 3px;
+    border-right-style:dotted;
+    border-color:white;
+
+}
+
+.OmeletFillers {
+    grid-area:OmeletFillers;
+    background-color: black;
+    font-size: 30px;
+    border-width: 2px;
+    border-style:solid;
+    border-color:white;
+    border-radius: 0px;
+    border-spacing: 15px;
+    text-align: center;
+    border-top: 3px;
+    border-bottom: 3px;
+    border-bottom-width: 3px;
+    border-bottom-style:dotted;
+    border-color:white;
+    border-left: 3px;
+}
+
+.NewKids{
+    grid-area:NewKids ;
+    background-color: black;
+    border-width: 2px;
+    border-style:solid;
+    border-color:white;
+    border-radius: 0px;
+    border-spacing: 15px;
+    text-align: center;
+    border-top: 3px;
+    border-bottom: 3px;
+    border-bottom-width: 3px;
+    border-bottom-style:dotted;
+    border-color:white;
+
+}
+.BB {
+    grid-area: BB;
+    font-size: 40px;
+}
+
+.Punisher {
+    grid-area:Punisher ;
+    font-size: 40px;
+    background-color: black;
+    border-width: 2px;
+    border-style:solid;
+    border-color:white;
+    border-radius: 0px;
+    border-spacing: 15px;
+    border-bottom: 3px;
+    border-bottom-width: 3px;
+    border-bottom-style:dotted;
+    border-color:white;
+    text-align: center;
+}
+
+.S {
+    grid-area:S ;
+    font-size: 20px;
+    color: white;
+    border-left:  3px;
+    border-color: black;
+}
+
+.Be{
+    grid-area:Be ;
+}
+
+/*food*/
+.Number1 {
+    grid-area:Number1 ;
+    background-color:whitesmoke;
+    border-width: 2px;
+    border-style:solid;
+    border-color:red;
+    border-radius: 5px;
+    border-spacing: 15px;
+}
+
+.Number2 {
+    grid-area: Number2;
+    background-color:whitesmoke;
+    border-width: 2px;
+    border-style:solid;
+    border-color:black;
+    border-radius: 5px;
+    border-spacing: 15px;
+}
+
+.Number3 {
+    grid-area:Number3 ;
+    background-color:whitesmoke;
+    border-width: 2px;
+    border-style:solid;
+    border-color:black;
+    border-radius: 5px;
+    border-spacing: 15px;
+}
+
+.Number4 {
+    grid-area: Number4;
+    background-color:whitesmoke;
+    border-width: 2px;
+    border-style:solid;
+    border-color:black;
+    border-radius: 5px;
+    border-spacing: 15px;
+}
+
+.Number5 {
+    grid-area:Number5 ;
+    background-color:whitesmoke;
+    border-width: 2px;
+    border-style:solid;
+    border-color:black;
+    border-radius: 5px;
+    border-spacing: 15px;
+}
+
+.Number6 {
+    grid-area: Number6;
+    background-color:whitesmoke;
+    border-width: 2px;
+    border-style:solid;
+    border-color:black;
+    border-radius: 5px;
+    border-spacing: 15px;
+}
+
+.Number7 {
+    grid-area:Number7 ;
+    background-color:whitesmoke;
+    border-width: 2px;
+    border-style:solid;
+    border-color:black;
+    border-radius: 5px;
+    border-spacing: 15px;
+}
+
+.Number8 {
+    grid-area:Number8 ;
+    background-color:whitesmoke;
+    border-width: 2px;
+    border-style:solid;
+    border-color:black;
+    border-radius: 5px;
+    border-spacing: 15px;
+}
+
+.Number9 {
+    grid-area:Number9 ;
+    background-color:whitesmoke;
+    border-width: 2px;
+    border-style:solid;
+    border-color:black;
+    border-radius: 5px;
+    border-spacing: 15px;
+}
+
+.Number10 {
+    grid-area: Number10;
+    background-color:whitesmoke;
+    border-width: 2px;
+    border-style:solid;
+    border-color:black;
+    border-radius: 5px;
+    border-spacing: 15px;
+}
+
+/*fonts*/
+
+.BoldYellow {
+    font-size: 20px;
+    color: yellow;
+}
+
+.YellowNormal {
+    font-size: 20px;
+    color: yellow;
+}
+
+.WNormal {
+    font-size: 20px;
+    color: white;
+}
+
+.GreenNormal {
+    font-size: 20px;
+    color: chartreuse
+}
+
+.BNormalBold {
+    font-size: 30px;
+    color: black;
+}
+
+.BNormal {
+    font-size: 20px;
+    color: black;
+}
+
+.NormalRed {
+    font-size: 20px;
+    color: red;
+}
+
+.BigRed {
+    color: red;
+    font-size: 30px;
+}
+
+.SmallNormal {
+    font-size: 15px;
+}
+
+.SmallNormalRed {
+    color:red;
+    font-size: 15px;
+}
+
+.FoodNormal{
+    color:mediumpurple;
+    font-size: 30px;
+}
+.twoeggs {
+    font-size: 20px;
+    color:hotpink;
+}
+
+.twoeggs2 {
+    font-size: 20px;
+    color:dodgerblue;  
+}
+
+.SFoodNormal {
+    color:mediumpurple;
+    font-size: 20px;
+}
+
+.BS {
+    font-size: 20px;
+    color:white;
+    text-align: center;
+}
+
+.BigPunisher {
+    font-size: 40px;
+    color: red;
+}
+
+.picture {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 60%;
+}
+
+.WNormal2 {
+    font-size: 30px;
+    color: white;
+}

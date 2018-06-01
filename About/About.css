@@ -1,0 +1,92 @@
+#back {
+    float: right;
+}
+
+body {
+
+    background-color:black;
+    background-repeat: no-repeat; 
+    background-attachment:fixed; 
+    background-size:contain;
+    background-image:url("");
+    background-position: center
+}
+
+
+
+h1 {
+    color: red;
+    text-align:50,50;
+    color: white;
+
+}
+
+p {
+    font-family: verdana;
+
+}
+
+.words{
+    grid-area: words;
+    color: white;
+}
+.words:hover{
+
+}
+
+.fullLyrics {
+    color: black;
+    transition-duration: 3s;
+}
+.help:hover + .fullLyrics{
+    color: white;
+    transition-duration: 3s;
+}
+
+.Lyrics{
+    grid-area: record;
+    z-index: 2;
+    transform: translate(200px,50px);
+}
+
+.record {
+    z-index: 1;
+    width: 900px;
+    left: 0px;
+    top: 0px;
+    animation-name: example;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    margin: 80px;
+    grid-area: record;
+    position: absolute;
+    text-align: center;
+    color: white;
+
+}
+
+
+@keyframes example {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+
+div {
+
+}
+.page {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 900px;
+    grid-template-areas:
+
+        "record "
+        "words "
+
+
+        ;
+
+}
+
+
